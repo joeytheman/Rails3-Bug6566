@@ -1,4 +1,10 @@
 Rails3Bug6566::Application.routes.draw do
+  resources :users_teams
+
+  resources :teams
+
+  resources :users
+  root :to => 'teams#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

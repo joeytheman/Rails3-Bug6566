@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @team.name %>
+</p>
+
+<ol>
+	<% @team.users_teams.each do |teammate|%>
+		<li><strong>Name: </strong><%= teammate.user.name%> <strong>Position: </strong><%= teammate.position %></li>
+	<% end %>
+</ol>
+
+<%= link_to 'Edit', edit_team_path(@team) %> |
+<%= link_to 'Back', teams_path %>

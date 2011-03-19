@@ -1,0 +1,27 @@
+<h1>Listing users_teams</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Team</th>
+    <th>Position</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @users_teams.each do |users_team| %>
+  <tr>
+    <td><%= users_team.user_id %></td>
+    <td><%= users_team.team_id %></td>
+    <td><%= users_team.position %></td>
+    <td><%= link_to 'Show', users_team %></td>
+    <td><%= link_to 'Edit', edit_users_team_path(users_team) %></td>
+    <td><%= link_to 'Destroy', users_team, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Users team', new_users_team_path %>
