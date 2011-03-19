@@ -20,6 +20,6 @@ How to reproduce Rails Lighthouse Bug #6566
 
 6. Navigate to "/team/1/edit".
 
-5. Set the position of player 1 to "A" and the position of player 2 to "C".
+7. Set the position of player 1 to "A" and the position of player 2 to "C".
 
-6. Attempt to save.
+8. Attempt to save.
